@@ -87,13 +87,21 @@ main h2{
     font-style: italic;
     color: #033c19;
 }
-caption {
-    text-transform:uppercase;
-    font-weight: 600;
-    height: 40px;
-    padding-top: 15px;
-    color: #753a30;
 
+#header-for-contact p{
+    font-size:22px;
+    padding-right: 1000px;
+    font-family:serif;
+}
+#header-for-contact li{
+    list-style-type:circle;
+    display:list-item;
+    font-size: 20px;
+
+}
+legend{
+    font-size: 35px;
+    font-style: italic;
 }
 label {
     display: block;
