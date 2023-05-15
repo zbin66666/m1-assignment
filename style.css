@@ -1,0 +1,122 @@
+
+header {
+    background: url(image/doge.png) 400px no-repeat; 
+    background-size: 1400px;  
+    margin-left: 20px;
+    height:400px; /* give header some height to display the background image*/
+    padding-top:100px;
+    padding-left:30px;
+}
+header h{
+    font-size:50px;
+    color:#cd853f;
+}
+li{ 
+    list-style-type:none;
+    display: inline;
+    padding: 0 20px; /* paadding: 0 on the top&bottom 20px on the left and right*/
+}
+li a{
+    text-decoration: none;
+}
+li a:link{
+    color:#000;
+}
+li a:visited{
+    color:#818db3;
+}
+li a:hover{
+    color:#333;
+    text-decoration: underline;
+}
+li a:active{
+    color:#753a30;
+}
+nav{
+    background-color:rgb(255,245,238);
+    height:50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 10px; 
+}
+main {
+    margin: 50px;
+}
+#General_info {
+    font-size: 40px;
+    color: #818db3;
+}
+#About_us {
+    font-size: 30px;
+    font-style: none;
+    margin-right: 1200px;
+}
+    
+#About_us::first-letter{
+    color: rgb(219, 23, 23, 0.491);
+    font-size: 50px;
+
+}
+
+main h1{
+    color: rgb(129,141,179);
+    font-family: arial;
+
+}
+main header{
+    background: none;
+    background-color:beige
+}
+
+main h2{
+    font-size: 40px;
+    font-style: oblique;
+    color: rgba(16, 16, 184, 0.43);
+}
+
+.doges-we-have img {
+    height: 300px;
+    width: 400px;
+}
+.doges-we-have p{
+    font-size: x-large;
+    margin-left: 50px;
+}
+
+.doges-we-have p:first-child{
+    font-style: italic;
+    color: #033c19;
+}
+caption {
+    text-transform:uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+
+}
+label {
+    display: block;
+    margin: 15px 0 0 0 ; 
+}
+input{
+    width: 300px;
+}
+input[ type="radio"]{
+    width: 25px;
+}
+textarea{
+    width: 300px;
+}
+input[type="submit"]{
+    display: block;
+    margin: 20px 0 10px 0; 
+    width: 100px;
+}   
+footer {
+    height: 40px;
+    background-color: rgb(129,141,179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211,218,240);
+}
