@@ -27,7 +27,7 @@
                 <h2>Our Cutties</h2>
                 
                 <ul id="pets">
-                    <li class="photo"><img src="image/dog1.jpeg" alt="dog1" alt="Tony">Tony, male, 3 years old, labrado</li>
+                    <!--<li class="photo"><img src="image/dog1.jpeg" alt="dog1" alt="Tony">Tony, male, 3 years old, labrado</li>
                     <li class="photo"><img src="image/dog2.jpeg" alt="dog2" alt="Wof">Wof, male, 2 years old, german shepherd </li>
                     <li class="photo"><img src="image/dog3.jpeg" alt="dog" alt=""></li>                    
                     <li class="photo"><img src="image/dog4.jpeg" alt="dog" alt=""></li>
@@ -36,7 +36,7 @@
                     <li class="photo"><img src="image/dog7.jpeg" alt="dog" alt=""></li>
                     <li class="photo"><img src="image/dog8.jpeg" alt="dog" alt=""></li>
                     <li class="photo"><img src="image/dog9.jpeg" alt="dog" alt=""></li>
-                    <li class="photo"><img src="image/dog10.jpeg" alt="dog" alt=""></li>
+                    <li class="photo"><img src="image/dog10.jpeg" alt="dog" alt=""></li>-->
                     
                 </ul>
     
@@ -50,6 +50,25 @@
             <footer>&copy; Copyright 2023 Bin. This site is using for eduaction purposed and only.</footer>   <!--This is for footer -->
         </div>
         <!--End of Container -->
-    </body>
+
+        <script>
+            var photos = [];
+            var fileNames = [];
+            var imageList = [];
+            var image;
+            var openList = "<li class='photo'>";
+            var closeList = "</li>";
+            
+            for (var i=0; i<10; i++){
+                fileNames.push("dog"+(i+1));
+                photos.push("<img src='image/"+fileNames[i]+".jpeg'>");
+                image = openList + photos[i] + closeList;
+                imageList.push(image);
+            }
+            document.getElementById("pets").innerHTML = imageList;
+
+        </script>
     
+    
+    </body>  
 </html>
