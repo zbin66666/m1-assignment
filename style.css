@@ -88,20 +88,22 @@ th, td{
     height: 35px;
     text-align: center;
 }
+/*on the our pets page*/
 
-.doges-we-have img {
+#pets li{
+    list-style-type:none;
+    display: list-item;
+    padding: 0 20px; /* paadding: 0 on the top&bottom 20px on the left and right*/
+    font-size: x-large;
+    margin-left: 50px;
+    color: rgba(4, 8, 241, 0.499);
+}
+
+#pets img {
     height: 300px;
     width: 400px;
 }
-.doges-we-have p{
-    font-size: x-large;
-    margin-left: 50px;
-}
 
-.doges-we-have p:first-child{
-    font-style: italic;
-    color: #033c19;
-}
 
 #header-for-contact p{
     font-size:22px;
