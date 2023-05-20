@@ -46,13 +46,13 @@ main {
     font-size: 40px;
     color: #818db3;
 }
-#About_us {
+#Intro {
     font-size: 30px;
     font-style: none;
     margin-right: 1200px;
 }
     
-#About_us::first-letter{
+#Intro::first-letter{
     color: rgb(219, 23, 23, 0.491);
     font-size: 50px;
 
@@ -72,6 +72,21 @@ main h2{
     font-size: 40px;
     font-style: oblique;
     color: rgba(16, 16, 184, 0.43);
+}
+table{
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #000
+} 
+caption {
+    background: rgba(138, 163, 64, 0.512);
+
+}
+th, td{
+    width: 150px;
+    height: 35px;
+    text-align: center;
 }
 
 .doges-we-have img {
