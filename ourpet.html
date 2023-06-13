@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Help Them Find A Home</title>
@@ -8,7 +8,7 @@
     <body>
         <div id="container">
             <header>
-                <h>Bin's Shelter</h>
+                <h1>Bin's Shelter</h1>
             </header> <!--This for heading-->
             <!--Main navigation-->
             <nav>
@@ -22,12 +22,17 @@
             <!-- End of Main Navigation-->
 
             <!--Main Content-->
-            
             <main class="our-pets"> 
                 <h2>Our Cutties</h2>
                 
-                <ul id="pets">
-                    <!--<li class="photo"><img src="image/dog1.jpeg" alt="dog1" alt="Tony">Tony, male, 3 years old, labrado</li>
+                <div id="pets" onclick="infoText">
+                    <figure id="petsimage">
+                        <!-- Placeholder for the caption -->
+                        <span id="petsCaption"></span>
+                    </figure>
+                        
+                    <!--<li>
+                    git <li class="photo"><img src="image/dog1.jpeg" alt="dog1" alt="Tony">Tony, male, 3 years old, labrado</li>
                     <li class="photo"><img src="image/dog2.jpeg" alt="dog2" alt="Wof">Wof, male, 2 years old, german shepherd </li>
                     <li class="photo"><img src="image/dog3.jpeg" alt="dog" alt=""></li>                    
                     <li class="photo"><img src="image/dog4.jpeg" alt="dog" alt=""></li>
@@ -36,18 +41,14 @@
                     <li class="photo"><img src="image/dog7.jpeg" alt="dog" alt=""></li>
                     <li class="photo"><img src="image/dog8.jpeg" alt="dog" alt=""></li>
                     <li class="photo"><img src="image/dog9.jpeg" alt="dog" alt=""></li>
-                    <li class="photo"><img src="image/dog10.jpeg" alt="dog" alt=""></li>-->
-                    
-                </ul>
-    
-        
-        
+                    <li class="photo"><img src="image/dog10.jpeg" alt="dog" alt=""></li>
+                    </li> -->
+                </div>
             </main>
             <!--End of main section-->
             
-            
             <!--Footer Information-->
-            <footer>&copy; Copyright 2023 Bin. This site is using for eduaction purposed and only.</footer>   <!--This is for footer -->
+            <footer>&copy; 2023 Bin. This site is used for educational purposes only.</footer>
         </div>
         <!--End of Container -->
 
@@ -55,20 +56,24 @@
             var photos = [];
             var fileNames = [];
             var imageList = [];
-            var image;
-            var openList = "<li class='photo'>";
-            var closeList = "</li>";
-            
-            for (var i=0; i<10; i++){
-                fileNames.push("dog"+(i+1));
-                photos.push("<img src='image/"+fileNames[i]+".jpeg'>");
-                image = openList + photos[i] + closeList;
-                imageList.push(image);
-            }
-            document.getElementById("pets").innerHTML = imageList;
+            var captionList = [];
 
+            var openCaption = "<figcaption>";
+            var closeCaption = "</figcaption>";
+            var dogNames = ["Tom","Charlie","Daisy","Bella","Buddy","Max","Bailey","Lucy","Cooper","Luna"];
+
+            for (var i = 0; i < dogNames.length; i++){
+                fileNames.push("dog" + (i+1));
+                photos.push("<img src='image/" + fileNames[i] + ".jpeg'>");
+                captionList.push(openCaption + dogNames[i] + closeCaption);
+            }
+        
+            var petsImage = document.getElementById("petsimage");
+            for (var j = 0; j < photos.length; j++) {
+                var figure = document.createElement("figure");
+                figure.innerHTML = photos[j] + captionList[j];
+                petsImage.appendChild(figure);
+            }
         </script>
-    
-    
     </body>  
 </html>

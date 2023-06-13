@@ -92,7 +92,7 @@ th, td{
 
 #pets li{
     list-style-type:none;
-    display: list-item;
+    display:contents
     padding: 0 20px; /* paadding: 0 on the top&bottom 20px on the left and right*/
     font-size: x-large;
     margin-left: 50px;
