@@ -90,20 +90,66 @@ th, td{
 }
 /*on the our pets page*/
 
-#pets li{
-    list-style-type:none;
-    display:contents
-    padding: 0 20px; /* paadding: 0 on the top&bottom 20px on the left and right*/
-    font-size: x-large;
-    margin-left: 50px;
-    color: rgba(4, 8, 241, 0.499);
+/* Reset default list styles */
+#pets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#pets img {
-    height: 300px;
-    width: 400px;
+/* Style for each pet image container */
+.petsimage {
+    width: 48%; /* Each image container takes up 48% of the available width */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
 }
 
+/* Style for the image within each pet image container */
+.petsimage img {
+    width: 100%; /* Make the image occupy the full width of its container */
+    height: auto;
+    display: block;
+}
+
+/* Style for the caption within each pet image container */
+.petsimage .caption {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Show the caption on hover */
+
+
+
+/* Style for the description within each pet image container */
+.petsimage .description {
+    display: none; /* Hide the description by default */
+    position:absolute;
+    text-align: center;
+    top: 40%;
+    left: 5%;
+    width: 85%;
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1; /* Ensure the description appears above the image */
+}
+
+/* Show the description on hover */
+.petsimage:hover .description {
+    display: block;
+}
+/* Contact Page */
 
 #header-for-contact p{
     font-size:22px;
