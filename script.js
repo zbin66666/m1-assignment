@@ -30,7 +30,7 @@ for (var j = 0; j < photos.length; j++) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get elements
+   
     var infoBox = document.getElementById("infoBox");
     var infoHeading = document.getElementById("infoHeading");
     var infoText = document.getElementById("infoText");
@@ -40,20 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
     var descriptions = document.getElementsByClassName("description");
     for (var i = 0; i < descriptions.length; i++) {
         descriptions[i].addEventListener("click", function () {
-            // Get caption and description content
+           
             var caption = this.previousElementSibling.innerHTML;
             var description = this.innerHTML;
 
-            // Set info box content
+          
             infoHeading.innerHTML = caption;
             infoText.innerHTML = description;
 
-            // Show info box
+           
             infoBox.style.display = "block";
         });
     }
 
-    // Hide info box when close link is clicked
     infoClose.addEventListener("click", function (e) {
         e.preventDefault();
         infoBox.style.display = "none";
