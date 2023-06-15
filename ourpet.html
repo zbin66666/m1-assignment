@@ -42,6 +42,13 @@
                     <li class="photo"><img src="image/dog10.jpeg" alt="dog" alt=""></li>
                     </li> -->
                 </div>
+                <div id="infoBox">
+                    <div id="infoContent">
+                        <h3 id="infoHeading"></h3>
+                        <p id="infoText"></p>
+                        <a href="#" id="infoClose">Close</a>
+                    </div>
+                </div>
             </main>
             <!--End of main section-->
             
@@ -50,41 +57,8 @@
         </div>
         <!--End of Container -->
 
-        <script>
-            var photos = [];
-            var fileNames = [];
-            var imageList = [];
-
-            var captionList = [];
-            var openCaption = "<figcaption class='caption'>";
-            var closeCaption = "</figcaption>";
-            var dogNames = ["Tom","Charlie","Daisy","Bella","Buddy","Max","Bailey","Lucy","Cooper","Luna"];
-
-            var openDesc = "<p class='description'>";
-            var closeDesc = "</p>";
-            var petsInfo = [] ;
-
-            var dogBreed =["Labrador Retriever","German Shepherd","Golden Retriever","Siberian Husky",
-        "American Bulldog","Akita","American Foxhound","Bichon Frise","Boykin Spaniel","Bull Terrier"]
-
-            for (var i = 0; i < dogNames.length; i++){
-                fileNames.push("dog" + (i+1));
-                photos.push("<img src='image/" + fileNames[i] + ".jpeg'>");
-                captionList.push(openCaption + dogNames[i] + closeCaption);
-                petsInfo.push(openDesc + dogNames[i] + " is a " + dogBreed[i] + closeDesc);
-            }
-        
-            var petsImage = document.getElementById("petsfigure");
-            for (var j = 0; j < photos.length; j++) {
-                var div = document.createElement("div");
-                div.classList.add("petsimage");
-                div.innerHTML = photos[j] + captionList[j] + petsInfo [j]; 
-                petsImage.appendChild(div);
-            }
-
-
-
-        
+        <script src="script.js">
+            
         </script>
     </body>  
 </html>

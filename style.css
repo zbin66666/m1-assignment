@@ -147,6 +147,44 @@ th, td{
 .petsimage:hover .description {
     display: block;
 }
+/* information box */
+
+#infoBox {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Style for the info box content */
+#infoContent {
+    text-align: center;
+}
+
+/* Style for the info box heading */
+#infoHeading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for the info box close link */
+#infoClose {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Show the info box when the description is clicked */
+.petsimage .description {
+    cursor: pointer;
+}
+
+
 /* Contact Page */
 
 #header-for-contact p{
