@@ -95,14 +95,12 @@ th, td{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
 }
 
 /* Style for each pet image container */
 .petsimage {
-    width: 48%; /* Each image container takes up 48% of the available width */
+    width: 48%; 
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 10px;
@@ -111,7 +109,7 @@ th, td{
 
 /* Style for the image within each pet image container */
 .petsimage img {
-    width: 100%; /* Make the image occupy the full width of its container */
+    width: 100%; 
     height: auto;
     display: block;
 }
@@ -132,17 +130,17 @@ th, td{
 
 /* Style for the description within each pet image container */
 .petsimage .description {
-    display: none; /* Hide the description by default */
+    display: none; 
     position:absolute;
     text-align: center;
-    top: 40%;
+    top: 38%;
     left: 5%;
     width: 85%;
     padding: 10px;
     color: #fff;
     font-size: 12px;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1; /* Ensure the description appears above the image */
+    background-color: rgba(90, 86, 86, 0.772);
+    z-index: 1; 
 }
 
 /* Show the description on hover */
