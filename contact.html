@@ -43,15 +43,21 @@
                         <label>Enter your full name</label>
                         <input type="text"> 
 
-                        <label>Enter your Email</label>
-                        <input type="text" name="email">
-
-                        <label>Enter your phone</label>
-                        <input type="number" name="phone">
-
                         <label>Which Pet you are interesting</label>
                         <input type="text" name="pets">
-                
+
+                        <label>How should we contact:</label>
+                        <select name="contactinfo" id="method">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                        </select>
+
+                        <lable id="methodInfo"></lable>
+                        <input type="text">
+
+                        <input type="submit" value="Inquire">
+
+
 
                     </fieldset>
                 </form>

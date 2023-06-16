@@ -189,8 +189,9 @@ th, td{
 
 #header-for-contact p{
     font-size:22px;
-    padding-right: 1000px;
+    padding-right: 100px;
     font-family:serif;
+    display: block;
 }
 #header-for-contact li{
     list-style-type:circle;
